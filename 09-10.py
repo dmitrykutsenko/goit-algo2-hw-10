@@ -44,7 +44,7 @@ def create_schedule(subjects, teachers):
 
 
 if __name__ == '__main__':
-    subjects = {'Математика', 'Фізика', 'Хімія', 'Інформатика', 'Біологія'}
+    subjects = {'Математика', 'Фізика', 'Хімія', 'Інформатика', 'Біологія'}#, 'Географія'}
 
     teachers = [
         Teacher("Олександр", "Іваненко", 45, "o.ivanenko@example.com", {"Математика", "Фізика"}),
@@ -52,7 +52,9 @@ if __name__ == '__main__':
         Teacher("Сергій", "Коваленко", 50, "s.kovalenko@example.com", {"Інформатика", "Математика"}),
         Teacher("Наталія", "Шевченко", 29, "n.shevchenko@example.com", {"Біологія", "Хімія"}),
         Teacher("Дмитро", "Бондаренко", 35, "d.bondarenko@example.com", {"Фізика", "Інформатика"}),
-        Teacher("Олена", "Гриценко", 42, "o.grytsenko@example.com", {"Біологія"})
+        Teacher("Олена", "Гриценко", 49, "o.grytsenko@example.com", {"Біологія"})
+        #Teacher("Олена", "Гриценко", 24, "o.grytsenko@example.com", {"Біологія", "Географія"})
+        #Teacher("Олена", "Гриценко", 24, "o.grytsenko@example.com", {"Біологія", "Географія"})
     ]
 
     schedule = create_schedule(subjects, teachers)
